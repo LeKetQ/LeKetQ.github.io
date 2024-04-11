@@ -60,6 +60,8 @@ body {
 
 h1 {
     color: var(--leKetDarkYellow);
+    font-size: 50px;
+    margin: 0px;
 }
 
 a {
