@@ -38,6 +38,10 @@
     --card-hover-icon-background-color: rgba(52, 211, 153, 0.1);
     --card-hover-icon-border-color: rgba(52, 211, 153, 0.2);
     --blur-opacity: .01;
+    --thickness: 2px;
+    --width: 60px;
+    --_g: #0000 90deg,rgba(255, 180, 0, 0.8) 0;
+    --_p: var(--width) var(--width) border-box no-repeat;
 }
 
 html {
