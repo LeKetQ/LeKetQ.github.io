@@ -35,7 +35,7 @@
 .card {
     background-color: var(--background-color);
     box-shadow: 5px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2);
-    padding: 68px 16px 16px 16px;
+    padding: 70px 16px 16px 16px;
     border-radius: 0px;
     cursor: inherit;
     position: relative;
