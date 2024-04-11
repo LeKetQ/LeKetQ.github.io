@@ -1,0 +1,67 @@
+
+:root {
+    --thickness: 2px;
+    --width: 60px;
+    --_g: #0000 90deg,rgba(255, 180, 0, 0.8) 0;
+    --_p: var(--width) var(--width) border-box no-repeat;
+}
+
+.minimize {
+    width: 60%;
+}
+
+
+#articleOne {
+    text-align: justify;
+}
+
+
+#articleOnePicture {
+    float: left;
+    margin: 5px 15px 5px 5px;
+    padding: 8px;
+    background: conic-gradient(from 90deg at top var(--thickness) left var(--thickness), var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top 0px right 0px,var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom 0px left 0px,var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--thickness) right var(--thickness), var(--_g)) 100% 100% / var(--_p);
+}
+
+    #articleOnePicture img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+#articleTwo {
+    text-align: right;
+}
+
+#articleTwoPicture {
+    float: right;
+    margin: 5px 5px 5px 15px;
+    padding: 8px;
+    background: conic-gradient(from 90deg at top 0px left 0px, var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top var(--thickness) right var(--thickness),var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom var(--thickness) left var(--thickness),var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom 0px right 0px, var(--_g)) 100% 100% / var(--_p);
+}
+
+    #articleTwoPicture img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+
+/* SOCIALS */
+#articleSocials a {
+    float: left;
+    text-decoration: none;
+}
+
+#articleSocials img {
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    margin-right: 20px;
+}
+
+    #articleSocials img:hover {
+        transition: 1s;
+        transform: scale(1.5);
+        background-color: var(--leKetDarkYellow);
+    }

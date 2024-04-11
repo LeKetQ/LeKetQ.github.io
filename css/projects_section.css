@@ -1,0 +1,100 @@
+
+#projects {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "projectsContainer projectsTitle";
+}
+
+#projectsTitle {
+    grid-area: projectsTitle;
+    margin-left: 20px;
+    width: 200px;
+}
+
+#projectsContainer {
+    grid-area: projectsContainer;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "projectOne projectTwo projectThree"
+        "projectOne projectFour projectFive";
+}
+
+#projectOne {
+    grid-area: projectOne;
+}
+
+    #projectOne img {
+        height: 428px;
+        width: 200px;
+    }
+
+#projectTwo {
+    grid-area: projectTwo;
+}
+
+#projectThree {
+    grid-area: projectThree;
+}
+
+#projectFour {
+    grid-area: projectFour;
+}
+
+#projectFive {
+    grid-area: projectFive;
+}
+
+.projectCard {
+    position: relative;
+    margin: 5px;
+    padding: 8px;
+    --thickness: 2px;
+    --width: 60px;
+    --_g: #0000 90deg,rgba(255, 180, 0, 0.5) 0;
+    --_gh: #0000 90deg,rgba(255, 180, 0, 1) 0;
+    --_p: var(--width) var(--width) border-box no-repeat;
+    background: conic-gradient(from 90deg at top var(--thickness) left var(--thickness), var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top 0px right 0px,var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom 0px left 0px,var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--thickness) right var(--thickness), var(--_g)) 100% 100% / var(--_p);
+}
+
+    .projectCard img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        box-shadow: 2px 2px var(--leKetDarkGrey);
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+
+    .projectCard .projectLabel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bolder;
+        font-size: 30px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .projectCard:hover {
+        background: conic-gradient(from 90deg at top var(--thickness) left var(--thickness), var(--_gh)) 0 0 / var(--_p), conic-gradient(from 180deg at top 0px right 0px,var(--_gh)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom 0px left 0px,var(--_gh)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--thickness) right var(--thickness), var(--_gh)) 100% 100% / var(--_p);
+    }
+
+        .projectCard:hover a {
+            cursor: default;
+        }
+
+        .projectCard:hover img {
+            opacity: 0.6;
+            transform: scale(1.02);
+            transition: 1s;
+        }
+
+        .projectCard:hover .projectLabel {
+            opacity: 1;
+            transition: 1.5s;
+        }

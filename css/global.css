@@ -1,0 +1,119 @@
+
+:root {
+    --leKetWhite: #ffffff;
+    --leKetGrey: #f6f6f6;
+    --leKetDarkGrey: #2B2B2B;
+    --leKetBlack: #111111;
+    --leKetYellow: #ffb400;
+    --leKetLightYellow: #ffc333;
+    --leKetDarkYellow: #cc9000;
+    --background-color: linear-gradient(to right, var(--leKetBlack), var(--leKetDarkGrey));
+    --text-color: var(--leKetWhite);
+    --card-background-color: linear-gradient(to right, var(--leKetBlack), var(--leKetDarkGrey));
+    --card-border-color: rgba(255, 180, 0, 0.3);
+    --card-background-gradient: conic-gradient(from 90deg at top var(--thickness) left var(--thickness), var(--_g)) 0 0 / var(--_p), conic-gradient(from 180deg at top 0px right 0px,var(--_g)) 100% 0 / var(--_p), conic-gradient(from 0deg at bottom 0px left 0px,var(--_g)) 0 100% / var(--_p), conic-gradient(from -90deg at bottom var(--thickness) right var(--thickness), var(--_g)) 100% 100% / var(--_p);
+
+    --card-box-shadow-1: rgba(0, 0, 0, 0.05);
+    --card-box-shadow-1-y: 3px;
+    --card-box-shadow-1-blur: 6px;
+    --card-box-shadow-2: rgba(0, 0, 0, 0.1);
+    --card-box-shadow-2-y: 8px;
+    --card-box-shadow-2-blur: 15px;
+    --card-label-color: var(--leKetWhite);
+    --card-icon-color: rgba(255, 180, 0, 0.7);
+    --card-icon-background-color: rgba(255, 255, 255, 0.08);
+    --card-icon-border-color: rgba(255, 255, 255, 0.12);
+    --card-shine-opacity: .1;
+    --card-shine-gradient: conic-gradient(from 205deg at 50% 50%, rgba(204, 144, 0, 0) 0deg, var(--leKetDarkYellow) 25deg, rgba(204, 144, 0, 0.18) 295deg, rgba(204, 144, 0, 0) 360deg);
+    --card-line-color: var(--leKetDarkGrey);
+    --card-tile-color: rgba(204, 144, 0, 0.05);
+    --card-hover-border-color: var(--leKetYellow);
+    --card-hover-box-shadow-1: rgba(0, 0, 0, 0.04);
+    --card-hover-box-shadow-1-y: 5px;
+    --card-hover-box-shadow-1-blur: 10px;
+    --card-hover-box-shadow-2: rgba(0, 0, 0, 0.3);
+    --card-hover-box-shadow-2-y: 15px;
+    --card-hover-box-shadow-2-blur: 25px;
+    --card-hover-icon-color: var(--leKetYellow);
+    --card-hover-icon-background-color: rgba(52, 211, 153, 0.1);
+    --card-hover-icon-border-color: rgba(52, 211, 153, 0.2);
+    --blur-opacity: .01;
+}
+
+html {
+    overflow: hidden;
+}
+
+main {
+    padding-top: 0px;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Garamond;
+    color: var(--leKetWhite);
+    background-image: linear-gradient(to right, var(--leKetBlack), var(--leKetDarkGrey));
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--leKetDarkYellow);
+}
+
+a {
+    color: var(--leKetWhite);
+}
+
+strong {
+    color: var(--leKetDarkYellow);
+}
+
+.alignLeft {
+    text-align: left;
+    margin: 0px auto 0px 50px;
+    max-width: 50%;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.alignRight {
+    text-align: right;
+    margin: 0px 50px 0px auto;
+    max-width: 50%;
+}
+
+.floatRight{
+    float: right;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto auto auto auto;
+    max-width: 80%;
+    max-height: 90%;
+}
+
+.fullViewHeight {
+    height: 100vh;
+    padding-top: 100px;
+    scroll-snap-align: start;
+}
+
+.snapScroll {
+    overflow-y: auto;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+    .snapScroll::-webkit-scrollbar {
+        display: none;
+    }

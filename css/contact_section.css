@@ -1,0 +1,116 @@
+
+#contact {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "contact links socials";
+}
+
+.contactContainer {
+    border-left: 2px solid rgba(255, 180, 0, 0.2);
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+
+/* LEFT SECTION */
+#contactData {
+    grid-area: contact;
+    border-left: none;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+    #contactData h4 {
+        margin-bottom: 15px;
+    }
+
+    #contactData figure a {
+        display: flex;
+        align-items: flex-start;
+        text-decoration: none;
+    }
+
+    #contactData figure img {
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    #contactData figure p {
+        margin: auto 0px auto 0px;
+        height: 100%;
+    }
+
+.contactText {
+    font-size: x-small;
+}
+
+
+/* MIDDLE SECTION */
+#contactLinks {
+    grid-area: links;
+}
+
+    #contactLinks a {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+        #contactLinks a:hover {
+            color: var(--leKetDarkYellow);
+        }
+
+
+/* RIGHT SECTION*/
+#contactSocials {
+    grid-area: socials;
+}
+
+    #contactSocials figure a {
+        display: flex;
+        align-items: flex-start;
+        text-decoration: none;
+    }
+
+    #contactSocials figure img {
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    #contactSocials img {
+        transition: 0.5s ease-in-out;
+        margin-right: 20px;
+    }
+
+        #contactSocials img:hover {
+            transition: 1s;
+            transform: scale(1.5);
+            background-color: var(--leKetDarkYellow);
+        }
+
+            #contactSocials img:hover ~ .socialText {
+                opacity: 1;
+                color: var(--leKetDarkYellow);
+                animation: appear-from-left 0.5s ease-in-out;
+            }
+
+.socialText {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* SOCIALS ANIMATION */
+@keyframes appear-from-left {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
